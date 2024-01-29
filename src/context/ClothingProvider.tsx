@@ -24,7 +24,6 @@ const ClothingProvider:React.FC<ClothingProviderProps> = ({children}) => {
         }
         getAllClothings()
     },[auth])
-    console.log(listClothing)
     const handleSendClothingCreate=async(clothing:ClothingInterface,formData:FormData)=>{
         const token =localStorage.getItem("token")
             
